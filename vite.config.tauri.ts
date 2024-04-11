@@ -6,6 +6,15 @@ import { UserConfig, defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import pkg from './package.json'
 
+import fs from 'fs-extra'
+
+try {
+    fs.copySync('node_modules/vditor/dist', 'public/vditor-cdn/dist', {})
+    console.log('Copy vditor dist as local cdn success!')
+} catch (err) {
+    console.error(err)
+}
+
 // https://vitejs.dev/config/
 /** @type {import('vite').UserConfig} */
 // @ts-ignor
