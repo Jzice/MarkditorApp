@@ -33,6 +33,10 @@ function initVditor() {
     cdn: "/vditor-cdn",
     height: "100%",
     borderless: true,
+    outline: {
+        enable: false,
+        position: "right"
+    },
     toolbarConfig: {
       enable: defaultShowToolbar
     },

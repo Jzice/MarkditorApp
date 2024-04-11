@@ -158,6 +158,7 @@
         "height": 600,
         "resizable": true,
         "title": "Markditor",
+        "titleBarStyle": "Overlay",
         "transparent": true,
         "width": 1000
       }
