@@ -149,6 +149,7 @@
     "updater": {
       "active": false
     },
+    "macOSPrivateApi": true,
     "windows": [
       {
         "label": "main",
@@ -157,6 +158,7 @@
         "height": 600,
         "resizable": true,
         "title": "Markditor",
+        "transparent": true,
         "width": 1000
       }
     ],

@@ -56,7 +56,8 @@ body::-webkit-scrollbar-thumb {
   }
 
   .dark {
-    --background: var(--gray-3);
+    /* --background: var(--gray-3); */
+    --background: transparent;
     --foreground: var(--white-a10);
     --card: var(--gray-2);
     --card-foreground: var(--gray-12);
@@ -105,6 +106,20 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.vditor {
+  --border-color: transparent !important;
+  --panel-background-color: transparent !important;
+  --toolbar-background-color: transparent !important;
+  --textbar-background-color: transparent !important;
+}
+
+.vditor--dark {
+  --border-color: transparent !important;
+  --panel-background-color: transparent !important;
+  --toolbar-background-color: transparent !important;
+  --textbar-background-color: transparent !important;
+}
+
 .vditor-reset pre > code {
   font-family: Conolas;
   :before {
@@ -113,6 +128,10 @@ body::-webkit-scrollbar-thumb {
   :after {
     font-family: Conolas;
   }
+}
+
+:root, .light, .light-theme {
+  --color-page-background: transparent !important;
 }
 
 :root {
